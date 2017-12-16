@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
-      <input type="text" id="q" class="form-control" />
+      <input type="text" id="q" class="ais-search-box--input" />
     </div>
   </div>
 
@@ -17,7 +17,7 @@
 <script type="text/javascript">
   $(document).ready(function() {
     var hitTemplate = '<div class="hit-instant-search">' +
-      '<div class="company">{{{_highlightResult.company.value}}}</div>' +
+      '<div class="company hit-name">{{{_highlightResult.company.value}}}</div>' +
       '<div class="name">{{{_highlightResult.zip.value}}}</div>' +
        '<div class="name">{{{_highlightResult.city.value}}}</div>' +
       '<div class="created_at">{{{created_at}}}</div>' +
@@ -36,7 +36,7 @@
     search.addWidget(
       instantsearch.widgets.searchBox({
         container: '#q',
-        placeholder: 'Search for contacts',
+        placeholder: 'tape ce que tu veux cest magique',
         autofocus: false,
         poweredBy: true
       })
