@@ -1,4 +1,27 @@
-<div class="container">
+<div class='search-box-wrapper'>
+  <div class='search-box'>
+    <div id='inputfield'>
+      <i class='fa fa-search icon-search'></i>
+      <input autocomplete='off' autocorrect='off' placeholder='fais toi plais' spellcheck='false' type='text'>
+    </div>
+  </div>
+</div>
+
+<section class='panel'>
+  <div class='panel-body'>
+    <div class='text-right p-3' id='stats'></div>
+    <div id='facets'></div>
+    <div id='hits'></div>
+  </div>
+</section>
+
+<main>
+    <div id="hits"></div>
+    <div id="pagination"></div>
+</main>
+
+
+<!--<div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
       <input type="text" id="q" class="ais-search-box--input" />
@@ -26,7 +49,7 @@
       '<div class="created_at">{{{created_at}}}</div>' +
       /*'<div class="email"><a href="mailto:{{{_highlightResult.email.value}}}">{{{_highlightResult.email.value}}}</a></div>' +*/
     '</div>';
-
+    
     var search = instantsearch({
       appId: 'ICKZN7NR9X',
       apiKey: 'f6d8f95d0b71f2b58a720e141f4b72a8',
@@ -35,16 +58,14 @@
     });
     
     
-
     search.addWidget(
       instantsearch.widgets.searchBox({
         container: '#q',
-        placeholder: 'tape ce que tu veux cest magique',
+        placeholder: 'tape ce que tu veux c\'est magique',
         autofocus: false,
         poweredBy: true
       })
     );
-
     search.addWidget(
       instantsearch.widgets.hits({
         container: '#hits',
@@ -55,7 +76,6 @@
         hitsPerPage: 10
       })
     );
-
     search.addWidget(
       instantsearch.widgets.refinementList({
         container: '#companies',
@@ -71,7 +91,6 @@
         }
       })
     );
-
     search.start();
   });
-</script>
+</script>-->

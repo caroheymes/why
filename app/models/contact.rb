@@ -2,8 +2,8 @@ class Contact < ApplicationRecord
     include AlgoliaSearch
     
     algoliasearch per_environment: true, force_utf8_encoding: true do
-    attributesToIndex ['company', 'zip', 'city', 'adr', 'chemise','manteau','couette', 'unordered(prestations)', 'region']
-    attributesForFaceting ['company']
+        attributesToIndex ['company', 'zip', 'city', 'adr', 'chemise','manteau','couette', 'unordered(prestations)', 'region']
+        attributesForFaceting ['company']
     end
     
     @@ALGOLIA_INDEX_NAME = "new_pressings"
