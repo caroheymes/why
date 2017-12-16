@@ -16,6 +16,12 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
+gem 'algoliasearch-rails', '~> 1.14', '>= 1.14.1'
+#gem 'kaminari', '~> 1.1', '>= 1.1.1'
+#gem 'capybara', '~> 2.16', '>= 2.16.1'
+gem 'will_paginate'
+
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end

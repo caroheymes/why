@@ -10,9 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20171216084326) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "contacts", force: :cascade do |t|
+    t.string "region"
+    t.float "lat"
+    t.float "lng"
+    t.string "company"
+    t.string "adr"
+    t.string "zip"
+    t.string "city"
+    t.float "couette"
+    t.float "manteau"
+    t.float "chemise"
+    t.string "facebook"
+    t.string "website"
+    t.text "openinghours"
+    t.text "clients"
+    t.string "phone"
+    t.string "phone2"
+    t.text "prestations"
+    t.string "reqgeocode"
+    t.string "chmap"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
