@@ -2,7 +2,7 @@
   <div class='search-box'>
     <div id='inputfield'>
       <i class='fa fa-search icon-search'></i>
-      <input autocomplete='off' autocorrect='off' placeholder='fais toi plais' spellcheck='false' type='text'>
+      <input autocomplete='off' autocorrect='off' placeholder='Cherche pas, trouve !' spellcheck='false' type='text'>
     </div>
   </div>
 </div>
@@ -21,76 +21,3 @@
 </main>
 
 
-<!--<div class="container">
-  <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
-      <input type="text" id="q" class="ais-search-box--input" />
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-3" id="facets">
-      <div id="companies"></div>
-    </div>
-    <div class="col-sm-9" id="hits"></div>
-  </div>
-</div>
-
-
-
-
-<script src="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    var hitTemplate = '<div class="hit-instant-search">' +
-      '<div class="company hit-name">{{{_highlightResult.company.value}}}</div>' +
-      '<div class="name">{{{_highlightResult.zip.value}}}</div>' +
-       '<div class="name">{{{_highlightResult.city.value}}}</div>' +
-      '<div class="created_at">{{{created_at}}}</div>' +
-      /*'<div class="email"><a href="mailto:{{{_highlightResult.email.value}}}">{{{_highlightResult.email.value}}}</a></div>' +*/
-    '</div>';
-    
-    var search = instantsearch({
-      appId: 'ICKZN7NR9X',
-      apiKey: 'f6d8f95d0b71f2b58a720e141f4b72a8',
-      indexName: 'new_pressings',
-      urlSync: true
-    });
-    
-    
-    search.addWidget(
-      instantsearch.widgets.searchBox({
-        container: '#q',
-        placeholder: 'tape ce que tu veux c\'est magique',
-        autofocus: false,
-        poweredBy: true
-      })
-    );
-    search.addWidget(
-      instantsearch.widgets.hits({
-        container: '#hits',
-        templates: {
-          empty: 'No results',
-          item: hitTemplate
-        },
-        hitsPerPage: 10
-      })
-    );
-    search.addWidget(
-      instantsearch.widgets.refinementList({
-        container: '#companies',
-        attributeName: 'company',
-        limit: 10,
-        templates: {
-          header: 'Companies'
-        },
-        cssClasses: {
-          root: 'list-group',
-          item: 'list-group-item',
-          count: 'badge pull-right'
-        }
-      })
-    );
-    search.start();
-  });
-</script>-->

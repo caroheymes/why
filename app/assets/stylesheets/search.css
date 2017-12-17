@@ -1,5 +1,3 @@
-// Specific CSS for your home-page
-
 
   .clear-page {
     overflow: hidden;
@@ -63,7 +61,7 @@
   .search-box-wrapper {
     padding: 20px 100px 20px;
     font-size: 1em;
-    background-color: #64A686;
+    background-color: #247dee;
     max-width: 100%;
     margin: 0px auto 0px auto;
   }
@@ -177,5 +175,3 @@
   .image-attribute img{
     width: 100%;
   }
-
-
