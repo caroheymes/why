@@ -329,7 +329,7 @@ Number.prototype.number_with_delimiter = function(delimiter) {
         }
       }
       index.search($("#inputfield input").val(), {
-        hitsPerPage: 10,
+        hitsPerPage: 20,
         facets: '*',
         maxValuesPerFacet: 10,
         facetFilters: facetFilters
