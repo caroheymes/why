@@ -318,7 +318,7 @@ Number.prototype.number_with_delimiter = function(delimiter) {
 
 
   $(function() {
-    var algolia = algoliasearch('ICKZN7NR9X', 'a8f88c3250a41d5274eafb1730f0cf6b');
+    var algolia = algoliasearch('CFDIVLK3WZ', '9bc9d5f2b9c7bf9b9ba514e8c0ff9780');
     var index = algolia.initIndex('new_pressings');
 
     window.search = function() {
